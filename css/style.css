@@ -9,19 +9,6 @@ html {
 	padding: 0;
 }
 
-#first {
-	height:30%;
-	margin: 0;
-}
-#second {
-	height:30%;
-	margin: 0;
-}
-#third {
-	height:25%;
-	margin: 0;
-}
-
 #navbar {
 	background-color: white;
 	border-radius: 15px 15px 0 0;
@@ -37,6 +24,14 @@ html {
 	float: right;
 }
 
+.navbar-header {
+	float: right;
+}
+
+#navbar-collapse {
+	float: right;
+}
+
 #headline {
 	background: url('../images/banner_sergio_rola.jpg');
 	background-size: cover;
@@ -44,6 +39,19 @@ html {
 	font-size: 20px;
 	font-weight: bold;
 	height: 100%;
+}
+
+#first {
+	height:30%;
+	margin: 0;
+}
+#second {
+	height:30%;
+	margin: 0;
+}
+#third {
+	height:25%;
+	margin: 0;
 }
 
 #one {
@@ -78,8 +86,9 @@ html {
 
 #foot {
 	background-color: white;
-	height:11%;
+	/*height:11%;*/
 	border-radius: 0 0 15px 15px;
+	margin:0;
 }
 
 @media (min-width: 320px) {
