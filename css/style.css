@@ -91,6 +91,16 @@ html {
 	margin:0;
 }
 
+#page2 {
+	display: none;
+}
+#page3 {
+	display: none;
+}
+#page4 {
+	display: none;
+}
+
 @media (min-width: 320px) {
 	body {
 		border: 4px solid black;

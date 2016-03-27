@@ -1,4 +1,33 @@
 $(document).ready(function() {
+	$('.nav-tabs a').click(function(e) {
+		e.preventDefault();
+		$(this).tab('show');
+	});
+	$('#linkPage2').click(function(e) {
+		e.preventDefault();
+		$('#page1').css('display', 'none');
+		$('#page2').css('display', 'inline');
+		$('#page3').css('display','none');
+		$('#page4').css('display','none');
+
+	});
+	$('#linkPage3').click(function(e) {
+		e.preventDefault();
+		$('#page1').css('display', 'none');
+		$('#page2').css('display', 'none');
+		$('#page3').css('display','inline');
+		$('#page4').css('display','none');
+
+	});
+	$('#linkHome').click(function(e) {
+		e.preventDefault();
+		$('#page1').css('display', 'inline');
+		$('#page2').css('display', 'none');
+		$('#page3').css('display','none');
+		$('#page4').css('display','none');
+	});
+
+
 });
 
 var icelandVids = function() {
@@ -18,7 +47,7 @@ var icelandVids = function() {
 			$.each(str, function(key, data) {
 				console.log(data);
 				console.log(data.snippet);
-				$('#one').append('<p><a href = "http://www.youtube.com/watch?v=' + data.id.videoId + '">' + data.snippet.title + '</a></p>');	
+				$('#page2 #one').append('<p><a href = "http://www.youtube.com/watch?v=' + data.id.videoId + '">' + data.snippet.title + '</a></p>');	
 			});
 		});
 	});
